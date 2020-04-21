@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form </title>
+</head>
+<style>
+	#comeback
+	{
+		width: 1060px;
+		height:50px;
+		background-color:#FFFFFF;
+		
+	}
+	#back
+	{
+		text-align: left;
+		font-size: 20px;
+		padding-top:15px;
+		padding-right: 50px;
+		color:#413F3F;
+		text-decoration: none;
+	}
+
+	#sitelogo
+	{
+		float:left;
+	}
+	
+</style>
+<body>
+	<div id="comeback">
+		<div id="sitelogo"><a href="index.html"><img src="image/sitelogo.png" width="70px" height="50px" alt="logo"></a></div>
+		<div id="back">|</div>
+		
+	</div>
+	<div id="form">
+<form action="Submited.html" style="width:650px">
+	<fieldset>
+		<legend>Sign up</legend>
+	<table>
+		<tr>
+			<td><label for="lastname" style="text-align: left">Last name(*) :</label></td>
+			<td><input type="text" id="lastname" name="lastname" required><label for="fname"> First name(*) :</label>
+			<input type="text" id="fname" name="fname" required></td>
+		</tr>
+		<tr>
+		<td><label for="email" >Email(*) :</label></td>
+		<td><input type="email" id="email" name="email" placeholder="example@gmail.com"  required></td>
+			</tr>
+		<tr>
+			<td><label for="dname">Displayname :</label></td>
+			<td><input type="text" id="dname" name="dname" pattern ="[A-Za-z0-9]{6,10}"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="font-size:13px;color: #505050">Only upper/lowercase letters and numbers.The string must also has a minimum <br> of four characters, and a maximum of ten.</td>
+		</tr>
+		<tr>
+			<td><label for="password">Password(*) :</label></td>
+			<td><input type="password" id="password" name="password"></td>
+		</tr>
+		<tr>
+			<td><label for="re-password">Re-Password(*) :</label></td>
+			<td><input type="password" id="re-password" name="password"></td>
+		</tr>
+		<tr>
+			<td>Sex :</td>
+			<td><label for="man">Man</label> <input type="radio" id="man" name="sex" value="Man">  <lable for="woman">Woman</lable><input type="radio" id="woman" name="sex" value="Woman"></td>
+		</tr>
+		<td><label for="bd">Birthdate :</label></td>
+		<td><input type="date" id="bd" name="bd"></td>
+		<tr>
+			<td><label for="fcolor">Favorite color: </label></td>
+			<td><input type="color" id="fcolor" name="fcolor"></td>
+		</tr>
+		
+	</table>
+		<input type="submit" value="Submit">		
+	</fieldset>
+	</form>
+	</div>
+</body>
+</html>
